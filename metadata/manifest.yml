@@ -1,5 +1,5 @@
 Name: nginx-hhvm
-Cartridge-Short-Name: PHP
+Cartridge-Short-Name: HHVM
 Display-Name: Nginx HHVM 3.11.0
 Description: "Nginx [engine x] is an HTTP and reverse proxy server, as well as a mail proxy server, written by Igor Sysoev. HHVM is an open-source virtual machine designed for executing programs written in Hack and PHP."
 Version: '3.11.0'
@@ -24,10 +24,10 @@ Cart-Data:
   - Key: OPENSHIFT_REPO_DIR
     Type: environment
     Description: "Application root directory where application files reside. This directory is reset every time you do a git-push"
-  - Key: OPENSHIFT_PHP_PORT
+  - Key: OPENSHIFT_HHVM_PORT
     Type: environment
     Description: "Internal port to which the web-framework binds to."
-  - Key: OPENSHIFT_PHP_IP
+  - Key: OPENSHIFT_HHVM_IP
     Type: environment
     Description: "Internal IP to which the web-framework binds to."
   - Key: OPENSHIFT_APP_DNS

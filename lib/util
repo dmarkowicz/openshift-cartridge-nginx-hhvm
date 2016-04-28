@@ -18,7 +18,7 @@ function build_config()
         echo "Using default configuration for $CONFIG_NAME"
         mkdir -p $CONF_DIR
         # Copy factory default
-        cp -r ${OPENSHIFT_PHP_DIR}usr/template/config/$CONFIG_NAME/*.erb $CONF_DIR
+        cp -r ${OPENSHIFT_HHVM_DIR}usr/template/config/$CONFIG_NAME/*.erb $CONF_DIR
         _run_template $CONF_DIR/*.erb
         # Remove factory default after generating real configurations
         rm $CONF_DIR/*.erb
